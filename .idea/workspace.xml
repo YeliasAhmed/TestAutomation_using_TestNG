@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0256fb3-2d92-4b62-91e1-997eefd6c13d" name="Changes" comment="Updated All">
+    <list default="true" id="c0256fb3-2d92-4b62-91e1-997eefd6c13d" name="Changes" comment="testRunner updated">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/customer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/chromedriver1.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/chromedriver2.exe" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,24 +60,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Yelias Ahmed/Desktop/TestNG_Java/src/test/resources",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Yelias Ahmed/Desktop/TestNG_Java/src/test/resources&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Yelias Ahmed\Desktop\TestNG_Java\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.testRunner.userRegistration">
+  <component name="RunManager" selected="Gradle.testRunner">
     <configuration name="Base.setup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -96,7 +101,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Setup.setup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="testRunner" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -109,7 +114,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;Setup.setup&quot;" />
+            <option value="&quot;testRunner&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -188,19 +193,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="TestNG_Full" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="TestNG_Full" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Runner" type="TestNG">
       <module name="TestNG_Full.test" />
       <shortenClasspath name="NONE" />
@@ -222,20 +214,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Gradle.testRunner" />
       <item itemvalue="Gradle.testRunner.getUserLogin" />
       <item itemvalue="Gradle.testRunner.loginDisplay" />
       <item itemvalue="Gradle.testRunner.userRegistration" />
       <item itemvalue="Gradle.Base.setup" />
-      <item itemvalue="Gradle.Setup.setup" />
       <item itemvalue="TestNG.Runner" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.testRunner.userRegistration" />
+        <item itemvalue="Gradle.testRunner" />
         <item itemvalue="Gradle.testRunner.loginDisplay" />
+        <item itemvalue="Gradle.testRunner.userRegistration" />
         <item itemvalue="Gradle.testRunner.getUserLogin" />
         <item itemvalue="Gradle.Base.setup" />
-        <item itemvalue="Gradle.Setup.setup" />
       </list>
     </recent_temporary>
   </component>
@@ -255,7 +247,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681938247948</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Base, LoginPage, testRunner updated">
+      <created>1681977056958</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681977056959</updated>
+    </task>
+    <task id="LOCAL-00003" summary="testRunner updated">
+      <created>1681977625917</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681977625917</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -271,6 +277,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated All" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated All" />
+    <MESSAGE value="Base, LoginPage, testRunner updated" />
+    <MESSAGE value="testRunner updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="testRunner updated" />
   </component>
 </project>
