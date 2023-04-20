@@ -17,12 +17,12 @@ public class Base {
         options.addArguments("--remote-allow-origins=*");
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
     }
     @AfterTest
     public void closeDriver(){
-        driver.close();
+//        driver.close();
     }
 
 }
