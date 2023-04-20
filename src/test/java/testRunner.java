@@ -13,7 +13,7 @@ public class testRunner extends Base{
 
     }
 
-
+    @Test
     public void loginDisplay(){
         LoginPage loginPage = new LoginPage(driver);
         driver.get("http://automationpractice.pl/");
