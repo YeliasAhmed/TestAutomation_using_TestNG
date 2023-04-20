@@ -11,9 +11,9 @@ public class LoginPage {
     @FindBy(className = "login")
     WebElement signIn;
     @FindBy(id = "email")
-    WebElement email;
+    WebElement getEmail;
     @FindBy(id = "passwd")
-    WebElement password;
+    WebElement getPassword;
     @FindBy(name = "SubmitLogin")
     WebElement login;
     @FindBy(className = "logout")
@@ -53,12 +53,12 @@ public class LoginPage {
         signIn.click();
     }
 
-    public void getUsername() {
-        email.sendKeys("abc@test.com");
+    public void getUsername(String email) {
+        getEmail.sendKeys(email);
     }
 
-    public void getPassword() {
-        password.sendKeys("12345");
+    public void getPassword(String password) {
+        getPassword.sendKeys(password);
     }
 
     public void getLogin() {
@@ -67,7 +67,7 @@ public class LoginPage {
     }
 
     public void getLogout() {
-        logout.isDisplayed();
+        logout.click();
 
     }
 
@@ -76,20 +76,22 @@ public class LoginPage {
 
     }
 
+// Create New Account
+
     public void getNewAccount(String email, String pass) {
         signIn.click();
         newEmail.sendKeys(email);
         createBtn.click();
         titleRadioBtn.click();
-        firstName.sendKeys("Mohammad");
-        lastName.sendKeys("Ahmed");
-        password.sendKeys(pass);
+        firstName.sendKeys("Abul");
+        lastName.sendKeys("Khan");
+        getPassword.sendKeys(pass);
         Select date = new Select(fDate);
         date.selectByValue("3");
         Select month = new Select(fMonth);
         month.selectByValue("5");
         Select year = new Select(fYear);
-        year.selectByValue("1993");
+        year.selectByValue("1920");
         register.click();
 
 
