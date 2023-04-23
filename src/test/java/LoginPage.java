@@ -42,38 +42,35 @@ public class LoginPage {
     @FindBy(id = "submitAccount")
     WebElement register;
 
+//    Negative Cases
+    @FindBy(xpath = "//li[normalize-space()='Invalid password.']")
+    WebElement invalidPass;
+    @FindBy(xpath = "//li[normalize-space()='Authentication failed.']")
+    WebElement invalidEmail;
+
     WebDriver driver;
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
-
     public void getAccount() {
         signIn.click();
     }
-
     public void getUsername(String email) {
         getEmail.sendKeys(email);
     }
-
     public void getPassword(String password) {
         getPassword.sendKeys(password);
     }
-
     public void getLogin() {
         login.click();
-
     }
-
     public void getLogout() {
         logout.click();
-
     }
-
     public String getUser() {
         return user.get(0).getText();
-
     }
 
 // Create New Account
@@ -93,7 +90,22 @@ public class LoginPage {
         Select year = new Select(fYear);
         year.selectByValue("1920");
         register.click();
+    }
+    public String getLoginInvalidPassword(String email, String password){
+        signIn.click();
+        getEmail.sendKeys(email);
+        getPassword.sendKeys(password);
+        login.click();
+       return invalidPass.getText();
 
+
+    }
+    public String getLoginInvalidEmail(String email, String password){
+        signIn.click();
+        getEmail.sendKeys(email);
+        getPassword.sendKeys(password);
+        login.click();
+       return invalidEmail.getText();
 
 
     }

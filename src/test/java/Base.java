@@ -1,6 +1,9 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.ITest;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -19,6 +22,17 @@ public class Base {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
+    }
+    @AfterMethod
+    public void screenShot(ITestResult result){
+        if(ITestResult.FAILURE == result.getStatus()){
+            try {
+                Utils utils = new Utils(driver);
+                utils.takeScreenshot();
+            }catch (Exception e){
+                System.out.println(e.toString());
+            }
+        }
     }
     @AfterTest
     public void closeDriver(){
